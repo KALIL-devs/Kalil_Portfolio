@@ -59,12 +59,12 @@ export default function Hero() {
               </span>
 
               {/* Underline */}
-              <motion.span
+              {/* <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
                 className="absolute left-1 right-1 -bottom-1 h-[4px] bg-zinc-900 rounded-full origin-left"
-              />
+              /> */}
             </span>{" "}
             online.
           </motion.h1>
