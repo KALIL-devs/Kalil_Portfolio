@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Kalil Dev Portfolio
 
-## Getting Started
+Welcome to the repository for my personal portfolio website! This project is a modern, responsive, and beautifully designed developer portfolio built to showcase my professional experience, skills, and featured projects. It highlights my ability to build scalable and visually engaging web applications.
 
-First, run the development server:
+![Portfolio Preview](/public/projects/project6.png) 
+*(Note: Preview image representation)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Modern UI/UX**: Sleek, elegant design using Tailwind CSS and Framer Motion for smooth animations and transitions.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing experiences.
+- **Project Showcase**: A dedicated section to display full-stack projects with live demos and source code links.
+- **Contact Integration**: An intuitive contact form section for professional inquiries.
+- **Performance Optimized**: Built on Next.js 16+ and React 19 leveraging modern features and optimal loading strategies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Library**: [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to set up the project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Make sure you have Node.js and npm (or yarn/pnpm) installed on your system.
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/KALIL-devs/Kalil_Portfolio.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Navigate to the project directory:**
+   ```bash
+   cd Kalil_Portfolio
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+5. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
+## 📁 Project Structure
+
+- `src/app/` - Next.js App Router pages and layouts.
+- `src/components/` - Reusable UI components and page sections (Projects, Contact, etc.).
+- `src/lib/` - Utility functions and shared logic.
+- `public/` - Static assets like images and fonts.
+
+## 📫 Connect with Me
+
+I'm actively looking for new opportunities! Feel free to reach out to me:
+
+- **Email**: [kalilrahman055@gmail.com](mailto:kalilrahman055@gmail.com)
+- **LinkedIn**: [Kalil Rahman](https://www.linkedin.com/in/kalil-rahman/)
+- **GitHub**: [@KALIL-devs](https://github.com/KALIL-devs)
+- **Phone**: +91 7598407107
+
+---
+
+*Designed and Built by [Kalil Rahman](https://github.com/KALIL-devs).*
