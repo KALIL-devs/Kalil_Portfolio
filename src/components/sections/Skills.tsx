@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, PenTool, Database } from "lucide-react";
+import { Code2, Database, LayoutTemplate, Settings } from "lucide-react";
 
 type SkillCategory = {
   title: string;
@@ -12,18 +12,18 @@ type SkillCategory = {
 const skillCategories: SkillCategory[] = [
   {
     title: "Frontend Engineering",
-    icon: Code2,
-    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Redux/Zustand"],
+    icon: LayoutTemplate,
+    skills: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "TypeScript"],
   },
   {
     title: "Backend & Database",
     icon: Database,
-    skills: ["Node.js", "API Design", "PostgreSQL / Prisma", "Authentication", "Next-Auth"],
+    skills: ["Python", "Django", "Supabase", "REST APIs"],
   },
   {
     title: "Tools & Deployment",
-    icon: PenTool,
-    skills: ["Git & GitHub", "Vercel", "Docker", "CI/CD", "Framer Motion"],
+    icon: Settings,
+    skills: ["Git", "GitHub", "Vercel", "Netlify"],
   },
 ];
 
@@ -44,25 +44,25 @@ const itemVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-zinc-50 dark:bg-zinc-950/30">
+    <section id="skills" className="py-24 bg-white border-t border-zinc-100">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold tracking-tight mb-4"
+            className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-zinc-950"
           >
-            My Expertise
+            Technical Arsenal
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto"
+            className="text-zinc-600 max-w-2xl mx-auto text-lg"
           >
-            A comprehensive overview of the technologies and tools I use to build modern web experiences.
+            A comprehensive overview of the technologies and tools I use to build robust web applications.
           </motion.p>
         </div>
 
@@ -77,17 +77,17 @@ export default function Skills() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-white dark:bg-zinc-900 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(255,255,255,0.02)] border border-zinc-100 dark:border-zinc-800"
+              className="bg-zinc-50/50 backdrop-blur-sm rounded-3xl p-8 border border-zinc-200 hover:border-zinc-300 transition-colors shadow-sm"
             >
-              <div className="h-12 w-12 rounded-2xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center mb-6 text-blue-600 dark:text-blue-400">
-                <category.icon size={24} />
+              <div className="h-14 w-14 rounded-2xl bg-white flex items-center justify-center mb-6 text-zinc-900 shadow-sm border border-zinc-100">
+                <category.icon size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-4">{category.title}</h3>
+              <h3 className="text-xl font-bold mb-6 text-zinc-950">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full text-sm font-medium text-zinc-700 dark:text-zinc-300"
+                    className="px-4 py-2 bg-white rounded-full text-sm font-medium text-zinc-700 border border-zinc-200"
                   >
                     {skill}
                   </span>
